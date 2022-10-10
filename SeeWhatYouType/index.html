@@ -17,5 +17,11 @@
   </body>
   <script>
     //code here
+    //Getting value from input field using update function to change it
+    document.addEventListener('input',update())
+    function update() {
+      document.getElementById('output').innerText = document.getElementById('input').value || document.getElementById('output').innerText
+    }
+
   </script>
 </html>
